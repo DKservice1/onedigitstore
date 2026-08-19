@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiStore - Trending Digital Products</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-indigo-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium">
+        🔥 Special Offer: Get 50% OFF on all trending digital bundles today! Instant Download.
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-bolt text-indigo-600 text-2xl"></i>
+                <span class="text-xl font-bold tracking-tight text-slate-900">Digi<span class="text-indigo-600">Store</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#products" class="hover:text-indigo-600 transition">Trending Products</a>
+                <a href="#features" class="hover:text-indigo-600 transition">Why Us</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Support</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button onclick="openCart()" class="relative bg-indigo-50 text-indigo-600 px-4 py-2 rounded-full font-medium hover:bg-indigo-100 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-count" class="bg-indigo-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-16 md:py-24 bg-gradient-to-b from-indigo-50/50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block bg-indigo-100 text-indigo-700 text-xs sm:text-sm font-semibold px-3 py-1 rounded-full mb-4">
+                🚀 Best Selling Digital Assets of 2026
+            </span>
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight">
+                Supercharge Your Workflow With <span class="text-indigo-600">Pro Digital Products</span>
+            </h1>
+            <p class="mt-6 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+                Discover high-converting e-books, UI design kits, AI prompt bundles, and social media templates. Instant download, lifetime access.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#products" class="bg-indigo-600 text-white font-medium px-8 py-3.5 rounded-xl shadow-lg shadow-indigo-600/30 hover:bg-indigo-700 transition">
+                    Explore Products
+                </a>
+                <a href="#features" class="bg-white text-slate-700 font-medium px-8 py-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 transition">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Products Section -->
+    <section id="products" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Trending Digital Products 🔥</h2>
+                <p class="text-slate-600 mt-1">Most downloaded products by creators and entrepreneurs this week.</p>
+            </div>
+            <div class="mt-4 md:mt-0 flex gap-2">
+                <span class="text-xs bg-indigo-600 text-white px-3 py-1.5 rounded-lg font-medium cursor-pointer">All</span>
+                <span class="text-xs bg-white text-slate-600 border border-slate-200 px-3 py-1.5 rounded-lg font-medium hover:bg-slate-50 cursor-pointer">Bundles</span>
+                <span class="text-xs bg-white text-slate-600 border border-slate-200 px-3 py-1.5 rounded-lg font-medium hover:bg-slate-50 cursor-pointer">E-Books</span>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Product 1 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-indigo-100 h-48 flex items-center justify-center overflow-hidden">
+                        <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Bestseller</span>
+                        <i class="fa-solid fa-robot text-6xl text-indigo-600"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                            <span>AI Prompts</span>
+                            <div class="flex items-center text-amber-500 font-semibold">
+                                <i class="fa-solid fa-star mr-1"></i> 4.9 (1.2k)
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 line-clamp-1">Ultimate ChatGPT & AI Bundle</h3>
+                        <p class="text-xs text-slate-500 mt-1 line-clamp-2">5000+ curated prompts for marketing, coding, and business automation.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-4">
+                    <div>
+                        <span class="text-xs text-slate-400 line-through">₹1,999</span>
+                        <div class="text-lg font-bold text-indigo-600">₹499</div>
+                    </div>
+                    <button onclick="addToCart('Ultimate ChatGPT & AI Bundle', 499)" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2.5 rounded-xl hover:bg-indigo-700 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Buy Now</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-purple-100 h-48 flex items-center justify-center overflow-hidden">
+                        <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-md">Trending</span>
+                        <i class="fa-solid fa-palette text-6xl text-purple-600"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                            <span>Design UI/UX</span>
+                            <div class="flex items-center text-amber-500 font-semibold">
+                                <i class="fa-solid fa-star mr-1"></i> 4.8 (850)
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 line-clamp-1">Figma Design System Kit</h3>
+                        <p class="text-xs text-slate-500 mt-1 line-clamp-2">Modern components, dark/light modes, and mobile templates.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-4">
+                    <div>
+                        <span class="text-xs text-slate-400 line-through">₹2,499</span>
+                        <div class="text-lg font-bold text-indigo-600">₹799</div>
+                    </div>
+                    <button onclick="addToCart('Figma Design System Kit', 799)" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2.5 rounded-xl hover:bg-indigo-700 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Buy Now</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-emerald-100 h-48 flex items-center justify-center overflow-hidden">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-bold px-2.5 py-1 rounded-md">New</span>
+                        <i class="fa-solid fa-chart-line text-6xl text-emerald-600"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                            <span>Social Media</span>
+                            <div class="flex items-center text-amber-500 font-semibold">
+                                <i class="fa-solid fa-star mr-1"></i> 5.0 (420)
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 line-clamp-1">Instagram Growth Toolkit</h3>
+                        <p class="text-xs text-slate-500 mt-1 line-clamp-2">300+ viral reels templates, hook lists, and carousel ideas.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-4">
+                    <div>
+                        <span class="text-xs text-slate-400 line-through">₹1,299</span>
+                        <div class="text-lg font-bold text-indigo-600">₹399</div>
+                    </div>
+                    <button onclick="addToCart('Instagram Growth Toolkit', 399)" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2.5 rounded-xl hover:bg-indigo-700 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Buy Now</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-blue-100 h-48 flex items-center justify-center overflow-hidden">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-md">Hot Deal</span>
+                        <i class="fa-solid fa-code text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                            <span>Development</span>
+                            <div class="flex items-center text-amber-500 font-semibold">
+                                <i class="fa-solid fa-star mr-1"></i> 4.7 (930)
+                            </div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900 line-clamp-1">Full-Stack SaaS Boilerplate</h3>
+                        <p class="text-xs text-slate-500 mt-1 line-clamp-2">Next.js & Tailwind boilerplate with built-in payments and Auth.</p>
+                    </div>
+                </div>
+                <div class="p-5 pt-0 flex items-center justify-between mt-4">
+                    <div>
+                        <span class="text-xs text-slate-400 line-through">₹4,999</span>
+                        <div class="text-lg font-bold text-indigo-600">₹1,499</div>
+                    </div>
+                    <button onclick="addToCart('Full-Stack SaaS Boilerplate', 1499)" class="bg-indigo-600 text-white text-sm font-medium px-4 py-2.5 rounded-xl hover:bg-indigo-700 transition flex items-center space-x-2">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>Buy Now</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Why Choose DigiStore?</h2>
+                <p class="text-slate-600 mt-2">Everything you need to grow your digital business seamlessly.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900">Instant Delivery</h3>
+                    <p class="text-slate-600 text-sm mt-2">Get direct download links right to your inbox instantly after checkout.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900">100% Secure Payments</h3>
+                    <p class="text-slate-600 text-sm mt-2">Trusted gateway integrations ensuring total safety for your transactions.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900">24/7 Creator Support</h3>
+                    <p class="text-slate-600 text-sm mt-2">We are always available to help you with product access and troubleshooting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center space-x-2 text-white mb-4">
+                    <i class="fa-solid fa-bolt text-indigo-500 text-xl"></i>
+                    <span class="text-lg font-bold tracking-tight">DigiStore</span>
+                </div>
+                <p class="text-sm">Your trusted marketplace for top-rated digital products and developer assets.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#products" class="hover:text-white transition">Trending Products</a></li>
+                    <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Categories</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="hover:text-white transition cursor-pointer">AI Prompts</span></li>
+                    <li><span class="hover:text-white transition cursor-pointer">UI Kits</span></li>
+                    <li><span class="hover:text-white transition cursor-pointer">Social Media</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-sm mb-4">Stay Updated</h4>
+                <p class="text-sm mb-3">Get trending asset alerts directly in your inbox.</p>
+                <div class="flex">
+                    <input type="email" placeholder="Your email" class="bg-slate-800 text-sm px-4 py-2 rounded-l-lg outline-none text-white w-full border border-slate-700">
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-r-lg hover:bg-indigo-700 transition">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-800 text-center text-xs">
+            &copy; 2026 DigiStore. All rights reserved. Built with Tailwind CSS.
+        </div>
+    </footer>
+
+    <!-- JavaScript for Cart Interactivity -->
+    <script>
+        let cartCount = 0;
+
+        function addToCart(productName, price) {
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+            alert(`🎉 "${productName}" has been added to your cart!\nPrice: ₹${price}\n\n(Tip: GitHub पर लाइव होने के बाद आप यहाँ अपना पेमेंट गेटवे जोड़ सकते हैं।)`);
+        }
+
+        function openCart() {
+            if(cartCount === 0) {
+                alert("Your cart is empty! Add some trending products first.");
+            } else {
+                alert(`You have ${cartCount} item(s) in your cart. Ready for checkout!`);
+            }
+        }
+    </script>
+</body>
+</html>
