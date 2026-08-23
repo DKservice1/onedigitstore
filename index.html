@@ -51,8 +51,12 @@
         
         <!-- स्लाइड 1 (Notion) -->
         <div class="slide absolute w-full h-full transition-opacity duration-1000 opacity-100">
-            <img src="desktop-1.jpg" class="hidden md:block w-full h-full object-cover brightness-[0.4]">
-            <img src="mobile-1.jpg" class="md:hidden w-full h-full object-cover brightness-[0.4]">
+            <!-- Desktop Image (Laptop/Tablet पर दिखेगी) -->
+        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1400&auto=format&fit=crop&q=80" class="hidden md:block w-full h-full object-cover">
+        
+        <!-- Mobile Image (सिर्फ मोबाइल फोन पर दिखेगी) -->
+        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop&q=80" class="md:hidden w-full h-full object-cover">
+        
             <div class="absolute inset-0 flex flex-col items-center justify-center text-white px-4 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">Notion Business Systems</h1>
                 <p class="text-lg md:text-xl">Example: Use our templates to track your daily client tasks.</p>
