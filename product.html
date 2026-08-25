@@ -1,1 +1,341 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Product Details - DigiStore</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-rose-600 selection:text-white">
 
+    <!-- Top Urgency Banner -->
+    <div class="bg-gradient-to-r from-rose-600 via-orange-600 to-amber-600 text-white text-xs font-bold py-2.5 text-center px-4 tracking-wide shadow-lg animate-pulse">
+        ⚠️ WARNING: Due to high demand, the 90% OFF discount link will expire in <span class="underline">02:14:59</span> hours! Don't regret missing out.
+    </div>
+
+    <!-- Navbar -->
+    <nav class="bg-slate-950/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-extrabold text-white flex items-center space-x-2">
+                <span class="bg-rose-600 p-2 rounded-xl text-white"><i class="fas fa-bolt"></i></span>
+                <span>DigiStore<span class="text-rose-500">.</span></span>
+            </a>
+            <a href="index.html" class="text-xs text-rose-400 hover:text-white font-semibold transition">
+                <i class="fas fa-arrow-left mr-1"></i> Back to Store
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Dynamic Product Section -->
+    <section class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            <!-- Left: Gallery & Multiple Photos -->
+            <div class="space-y-4">
+                <div class="relative w-full h-[380px] sm:h-[460px] rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                    <span class="absolute top-4 left-4 z-10 bg-rose-600 text-white font-black text-xs px-3.5 py-1.5 rounded-xl shadow-lg">🔥 BEST SELLER</span>
+                    <img id="prod-img" src="" alt="Product Image" class="w-full h-full object-cover">
+                </div>
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition">
+                        <img id="thumb-1" src="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition">
+                        <img id="thumb-2" src="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition">
+                        <img id="thumb-3" src="" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Details, Ratings & High-Converting Buy Box -->
+            <div>
+                <div class="flex items-center space-x-2 mb-3">
+                    <div class="flex text-amber-400 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span id="prod-rating" class="text-xs text-slate-300 font-bold">4.9 / 5.0 (18,450+ Verified Ratings)</span>
+                </div>
+
+                <span id="prod-badge" class="bg-rose-500/10 text-rose-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-rose-500/20 inline-block mb-3">
+                    Loading...
+                </span>
+                
+                <h1 id="prod-title" class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+                    Loading Product...
+                </h1>
+
+                <div class="flex items-center space-x-3 mb-6 p-3 bg-slate-900/60 rounded-2xl border border-slate-800">
+                    <div class="flex -space-x-2">
+                        <img class="w-8 h-8 rounded-full border border-slate-950 object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80">
+                        <img class="w-8 h-8 rounded-full border border-slate-950 object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80">
+                        <img class="w-8 h-8 rounded-full border border-slate-950 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80">
+                    </div>
+                    <span id="prod-bought-count" class="text-xs text-slate-300"><b>1,420 people</b> bought this recently!</span>
+                </div>
+                
+                <div class="flex items-center space-x-4 mb-6">
+                    <span id="prod-price" class="text-3xl sm:text-4xl font-black text-rose-500">₹0</span>
+                    <span id="prod-old-price" class="text-slate-500 line-through text-xl">₹2,999</span>
+                    <span class="bg-rose-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-md animate-bounce">SAVE 90%</span>
+                </div>
+
+                <p id="prod-desc" class="text-slate-300 text-sm sm:text-base mb-8 leading-relaxed">
+                    Please wait while we fetch the product details...
+                </p>
+
+                <!-- Bonuses -->
+                <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 mb-8 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-rose-400 mb-3"><i class="fas fa-gift mr-1"></i> Special Free Bonuses Included Today:</h4>
+                    <div class="text-xs text-slate-300 flex items-center"><i class="fas fa-check text-emerald-400 mr-2"></i> Bonus #1: Secret Growth Master Guide (Worth ₹999) - <span class="text-emerald-400 font-bold ml-1">FREE</span></div>
+                    <div class="text-xs text-slate-300 flex items-center"><i class="fas fa-check text-emerald-400 mr-2"></i> Bonus #2: Premium Resource Toolkit (Worth ₹799) - <span class="text-emerald-400 font-bold ml-1">FREE</span></div>
+                </div>
+
+                <!-- Checkout Box -->
+                <div class="bg-slate-900 p-6 rounded-3xl border border-rose-500/30 shadow-2xl relative">
+                    <button onclick="alert('Redirecting to Secure Payment Gateway...')" class="w-full bg-gradient-to-r from-rose-600 via-orange-600 to-amber-600 hover:opacity-95 text-white font-black py-4 rounded-2xl transition shadow-xl shadow-rose-600/30 text-base sm:text-lg flex items-center justify-center space-x-2">
+                        <i class="fas fa-lock text-sm"></i>
+                        <span>GET INSTANT ACCESS NOW</span>
+                    </button>
+                    
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap items-center justify-center gap-4 text-[11px] text-slate-400">
+                        <span><i class="fas fa-shield-alt text-emerald-400 mr-1"></i> 100% Secure Checkout</span>
+                        <span>•</span>
+                        <span><i class="fas fa-bolt text-amber-400 mr-1"></i> Instant Google Drive Link</span>
+                        <span>•</span>
+                        <span><i class="fas fa-undo text-indigo-400 mr-1"></i> Verified Guarantee</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NEW: Detailed Long-Form Sales Section (बीच का बड़ा और खतरनाक डिटेल्ड सेक्शन) -->
+    <section class="py-16 bg-slate-900/20 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <!-- Box 1: What is this product? -->
+            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <span class="bg-rose-500/10 text-rose-500 p-2.5 rounded-xl mr-3"><i class="fas fa-file-alt"></i></span>
+                    <span>यह प्रोडक्ट क्या है और इससे आपको क्या मिलेगा?</span>
+                </h3>
+                <p id="long-desc-1" class="text-slate-300 text-base leading-relaxed">
+                    Loading detailed breakdown...
+                </p>
+            </div>
+
+            <!-- Box 2: How to Use (इस्तेमाल कैसे करें) -->
+            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-6 flex items-center">
+                    <span class="bg-amber-500/10 text-amber-500 p-2.5 rounded-xl mr-3"><i class="fas fa-list-check"></i></span>
+                    <span>इसे इस्तेमाल करने का सही तरीका (Step-by-Step Guide)</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
+                        <span class="text-amber-500 font-black text-lg">01</span>
+                        <h4 class="text-white font-bold text-sm mt-2 mb-1">Instant Download</h4>
+                        <p class="text-xs text-slate-400">Payment करते ही आपको तुरंत Google Drive की सुरक्षित लिंक मिल जाएगी।</p>
+                    </div>
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
+                        <span class="text-amber-500 font-black text-lg">02</span>
+                        <h4 class="text-white font-bold text-sm mt-2 mb-1">Copy & Paste Setup</h4>
+                        <p class="text-xs text-slate-400">फाइल्स को खोलें, अंदर दिए गए टेम्पलेट्स या प्रॉम्प्ट्स को सीधा कॉपी करें।</p>
+                    </div>
+                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
+                        <span class="text-amber-500 font-black text-lg">03</span>
+                        <h4 class="text-white font-bold text-sm mt-2 mb-1">Scale & Grow</h4>
+                        <p class="text-xs text-slate-400">अपने काम में लगाएं और कम समय में 10x रिजल्ट्स हासिल करें।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 3: Why it gives maximum benefit -->
+            <div class="bg-gradient-to-br from-rose-950/30 to-slate-900 p-8 rounded-3xl border border-rose-500/30 shadow-xl">
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
+                    <span class="bg-rose-500/20 text-rose-400 p-2.5 rounded-xl mr-3"><i class="fas fa-chart-line"></i></span>
+                    <span>इसको इस्तेमाल करने से आपको ज्यादा फायदा क्यों होगा?</span>
+                </h3>
+                <p class="text-slate-300 text-base leading-relaxed mb-4">
+                    बाजार में हजारों लोग बिना किसी स्ट्रैटेजी के महीनों मेहनत करते हैं और नाकामयाब हो जाते हैं। यह प्रोडक्ट आपके महीनों के समय और हजारों रुपये की फालतू रिसर्च को बचाता है। इसमें वो सब कुछ प्रूवेन (Proven) और रेडी-मेड मिलता है जो बड़े-बड़े मार्केटर्स इस्तेमाल करते हैं।
+                </p>
+                <div class="flex items-center text-rose-400 text-xs font-bold">
+                    <i class="fas fa-shield-check mr-2 text-base"></i> 100% Action-Oriented & Zero Fluff Material Guaranteed.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dynamic Customer Reviews & Comments Section -->
+    <section class="py-20 bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-2">What Happy Customers Are Saying</h2>
+                <p class="text-slate-400 text-sm">Real reviews from verified creators who used this exact product.</p>
+            </div>
+
+            <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Dynamic Reviews -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-10 text-center text-slate-500 text-xs">
+        <p>&copy; 2026 DigiStore. All rights reserved. Instant Digital Delivery Worldwide.</p>
+    </footer>
+
+    <!-- JavaScript Engine -->
+    <script>
+        const productsData = {
+            "chatgpt-prompts": {
+                title: "ChatGPT Mega Prompts Masterclass",
+                badge: "🔥 AI Guide & Prompts",
+                price: "₹349",
+                oldPrice: "₹1,999",
+                rating: "4.9 / 5.0 (14,230+ Verified Ratings)",
+                bought: "1,850 people bought this in the last 24 hours!",
+                desc: "2000+ ready-to-use prompts for business & marketing to skyrocket your productivity and sales without effort.",
+                longDesc: "यह कोई साधारण ई-बुक नहीं है, बल्कि 2000+ से ज्यादा खूंखार और टेस्टेड ChatGPT प्रॉम्प्ट्स का खजाना है। इसे विशेष रूप से डिजिटल मार्केटर्स, यूट्यूबर्स, और बिजनेस ओनर्स के लिए डिज़ाइन किया गया है। अगर आप कंटेंट लिखने, ईमेल मार्केटिंग करने, या अपने सोशल मीडिया को ऑटोमेट करने में घंटों लगाते हैं, तो यह बंडल आपका 90% समय बचा लेगा। इसमें हर प्रॉम्प्ट को इस तरह से सेट किया गया है कि आपको सिर्फ कॉपी-पेस्ट करना है और AI आपके लिए चुटकियों में बेहतरीन काम करके दे देगा।",
+                images: [
+                    "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=1200&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&auto=format&fit=crop&q=80"
+                ],
+                reviews: [
+                    { name: "Vikas Tyagi", text: "Bhai, kasam से yeh prompt bundle lene ke baad mere clients ke email campaign 3x faster convert hone lage hain!", img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Neha Gupta", text: "Writing work ab bohot aasan ho gaya hai. AI se kya-kya karwa sakte hain, isme sab detail me sikhaya hai.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Amit Rawat", text: "Pehle socha ₹349 me kya milega, par content itna tagda hai ki maza aa gaya. Value for money!", img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&auto=format&fit=crop&q=80" }
+                ]
+            },
+            "ai-video-kit": {
+                title: "AI Video Creation Kit (Faceless)",
+                badge: "⚡ Viral Video Masterclass",
+                price: "₹499",
+                oldPrice: "₹2,499",
+                rating: "4.8 / 5.0 (22,100+ Verified Ratings)",
+                bought: "2,410 people bought this in the last 24 hours!",
+                desc: "Make viral faceless reels using cutting-edge AI tools without showing your face or recording audio. Explode your reach today!",
+                longDesc: "आज के समय में इंस्टाग्राम रील्स और यूट्यूब शॉट्स पर बिना चेहरा दिखाए और बिना अपनी आवाज रिकॉर्ड किए लाखों फॉलोअर्स कैसे बढ़ाएं, इस बात का पूरा सीक्रेट इस वीडियो किट में छिपा है। इसमें आपको दुनिया के सबसे बेहतरीन AI वीडियो जनरेटर्स, ऑटो-कैप्शन टूल्स और वायरल एडिटिंग टेंपलेट्स का पूरा सेटअप मिलता है। आपको कैमरे के सामने आने की बिल्कुल जरूरत नहीं है—AI आपके लिए वीडियो बनाएगा और आप घर बैठे तेजी से ग्रो करेंगे।",
+                images: [
+                    "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&auto=format&fit=crop&q=80"
+                ],
+                reviews: [
+                    { name: "Rohit Sharma", text: "Bhai is kit ki wajah se meri ek reel pe 1.2 Million views aa gaye bina apna chehra dikhaye! Absolute game-changer.", img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Priya Singh", text: "Tools ko use karna itna simple tarike se bataya gaya hai ki koi bhi 10 minute me seekh sakta hai.", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Karan Verma", text: "Instagram theme pages ke liye yeh kit sabse best investment hai jo maine ki hai.", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" }
+                ]
+            },
+            "zapier-vault": {
+                title: "Zapier Workflow Automation Vault",
+                badge: "⚙️ Business Automation",
+                price: "₹699",
+                oldPrice: "₹3,499",
+                rating: "5.0 / 5.0 (9,840+ Verified Ratings)",
+                bought: "920 people bought this in the last 24 hours!",
+                desc: "Automate your business tasks, leads, and emails without coding using advanced Zapier flows built by top experts.",
+                longDesc: "अपने बिजनेस के सारे बोरिंग काम—जैसे लीड्स कलेक्ट करना, ऑटो-ईमेल भेजना, गूगल शीट्स मैनेज करना—को पूरी तरह ऑटोमेट करने का यह सबसे बेहतरीन मास्टर वॉर्ट है। इसमें आपको कोडिंग की एक लाइन भी नहीं लिखनी पड़ती। प्री-बिल्ट Zapier वर्कफ्लो टेम्पलेट्स दिए गए हैं जिन्हें बस एक क्लिक में इंपोर्ट करना है और आपका पूरा सिस्टम ऑटो पायलट मोड पर काम करने लगेगा।",
+                images: [
+                    "https://images.unsplash.com/photo-1542744094-3a31246264d0?w=1200&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=80"
+                ],
+                reviews: [
+                    { name: "Manish Agarwal", text: "Maine apne saare client leads automated kar liye hain. Ghanto ka kaam ab seconds me hota hai!", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Sneha Joshi", text: "Zapier setup karna mujhe bahut hard lagta tha, par is vault ke pre-built templates ne life asaan kar di.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Rahul Deshmukh", text: "Top-notch technical flows! Har ek automation step-by-step explain ki gayi hai.", img: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&auto=format&fit=crop&q=80" }
+                ]
+            },
+            "ai-startup": {
+                title: "AI Startup Blueprint & E-Book",
+                badge: "🚀 Solo Business Guide",
+                price: "₹399",
+                oldPrice: "₹1,499",
+                rating: "4.9 / 5.0 (11,500+ Verified Ratings)",
+                bought: "1,150 people bought this in the last 24 hours!",
+                desc: "Build a solo digital business using artificial intelligence from scratch to scaling a 6-figure income stream.",
+                longDesc: "अकेले बंदे (Solo Founder) के रूप में आर्टिफिशियल इंटेलिजेंस की मदद से एक पूरी डिजिटल कंपनी कैसे खड़ी करें, इसका ज़ीरो से लेकर सिक्स-फिगर रेवेन्यू तक का पूरा ब्लूप्रिंट इस ई-बुक में है। आइडिया जनरेशन से लेकर प्रोडक्ट लॉन्च और मार्केटिंग तक, सब कुछ बिना किसी टीम या बड़ी लागत के कैसे मैनेज करना है, यह इसमें सिखाया गया है।",
+                images: [
+                    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=400&auto=format&fit=crop&q=80",
+                    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&auto=format&fit=crop&q=80"
+                ],
+                reviews: [
+                    { name: "Deepak Meena", text: "Solo solopreneur banne ka poora roadmap mil gaya. Bahut hi powerful blueprint hai.", img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Anjali Verma", text: "Maine apni micro-saas company ishi blueprint ke base pe start ki hai. Highly recommended!", img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" },
+                    { name: "Siddharth Jain", text: "Zero investment me business kaise scale karna hai, ye is kitab ki sabse badi khasiyat hai.", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" }
+                ]
+            }
+        };
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        if (productId && productsData[productId]) {
+            const product = productsData[productId];
+            
+            // Text Details
+            document.getElementById('page-title').innerText = product.title + " - DigiStore";
+            document.getElementById('prod-title').innerText = product.title;
+            document.getElementById('prod-badge').innerText = product.badge;
+            document.getElementById('prod-price').innerText = product.price;
+            document.getElementById('prod-old-price').innerText = product.oldPrice;
+            document.getElementById('prod-desc').innerText = product.desc;
+            document.getElementById('prod-rating').innerText = product.rating;
+            document.getElementById('prod-bought-count').innerHTML = `<b>${product.bought}</b>`;
+            
+            // Long Description Box (हर प्रोडक्ट के लिए अलग लंबी डिटेल)
+            document.getElementById('long-desc-1').innerText = product.longDesc;
+
+            // Images
+            document.getElementById('prod-img').src = product.images[0];
+            document.getElementById('thumb-1').src = product.images[0];
+            document.getElementById('thumb-2').src = product.images[1];
+            document.getElementById('thumb-3').src = product.images[2];
+
+            // Reviews
+            const reviewsContainer = document.getElementById('reviews-container');
+            reviewsContainer.innerHTML = "";
+            
+            product.reviews.forEach(rev => {
+                const reviewCard = `
+                    <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs mb-3">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm">"${rev.text}"</p>
+                        </div>
+                        <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-900">
+                            <img src="${rev.img}" class="w-9 h-9 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-xs font-bold text-white">${rev.name}</h4>
+                                <p class="text-[10px] text-emerald-400"><i class="fas fa-check-circle"></i> Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                reviewsContainer.innerHTML += reviewCard;
+            });
+
+        } else {
+            document.getElementById('prod-title').innerText = "Product Not Found!";
+            document.getElementById('prod-desc').innerText = "The product you are looking for does not exist or has been removed.";
+            document.getElementById('long-desc-1').innerText = "No description available.";
+            document.getElementById('reviews-container').innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>
