@@ -25,8 +25,8 @@
                 <span class="bg-rose-600 p-2 rounded-xl text-white"><i class="fas fa-bolt"></i></span>
                 <span>DigiStore<span class="text-rose-500">.</span></span>
             </a>
-            <a href="index.html" class="text-xs text-rose-400 hover:text-white font-semibold transition">
-                <i class="fas fa-arrow-left mr-1"></i> Back to Store
+            <a href="index.html" class="text-xs text-rose-400 hover:text-white font-semibold transition flex items-center bg-slate-900 px-4 py-2 rounded-xl border border-slate-800">
+                <i class="fas fa-arrow-left mr-1.5"></i> Back to Store
             </a>
         </div>
     </nav>
@@ -36,20 +36,20 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             
             <!-- Left: Gallery & Multiple Photos -->
-            <div class="space-y-4">
-                <div class="relative w-full h-[380px] sm:h-[460px] rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
-                    <span class="absolute top-4 left-4 z-10 bg-rose-600 text-white font-black text-xs px-3.5 py-1.5 rounded-xl shadow-lg">🔥 BEST SELLER</span>
+            <div class="space-y-4 lg:sticky lg:top-28">
+                <div class="relative w-full h-[400px] sm:h-[480px] rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                    <span class="absolute top-4 left-4 z-10 bg-rose-600 text-white font-black text-xs px-3.5 py-1.5 rounded-xl shadow-lg flex items-center"><i class="fas fa-fire mr-1.5"></i> BEST SELLER</span>
                     <img id="prod-img" src="" alt="Product Image" class="w-full h-full object-cover">
                 </div>
                 <!-- Thumbnails -->
                 <div class="grid grid-cols-3 gap-3">
-                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition">
+                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition shadow-md">
                         <img id="thumb-1" src="" class="w-full h-full object-cover">
                     </div>
-                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition">
+                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition shadow-md">
                         <img id="thumb-2" src="" class="w-full h-full object-cover">
                     </div>
-                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition">
+                    <div class="h-24 rounded-2xl overflow-hidden border border-slate-800 cursor-pointer opacity-70 hover:opacity-100 transition shadow-md">
                         <img id="thumb-3" src="" class="w-full h-full object-cover">
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="flex text-amber-400 text-sm">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <span id="prod-rating" class="text-xs text-slate-300 font-bold">4.9 / 5.0 (18,450+ Verified Ratings)</span>
+                    <span id="prod-rating" class="text-xs text-slate-300 font-bold">4.9 / 5.0 (Verified Ratings)</span>
                 </div>
 
                 <span id="prod-badge" class="bg-rose-500/10 text-rose-400 text-xs font-semibold px-3 py-1.5 rounded-full border border-rose-500/20 inline-block mb-3">
@@ -91,11 +91,11 @@
                     Please wait while we fetch the product details...
                 </p>
 
-                <!-- Bonuses -->
-                <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 mb-8 space-y-2">
+                <!-- Bonuses Box -->
+                <div class="bg-slate-900 p-5 rounded-2xl border border-slate-800 mb-8 space-y-2 shadow-inner">
                     <h4 class="text-xs font-bold uppercase tracking-wider text-rose-400 mb-3"><i class="fas fa-gift mr-1"></i> Special Free Bonuses Included Today:</h4>
-                    <div class="text-xs text-slate-300 flex items-center"><i class="fas fa-check text-emerald-400 mr-2"></i> Bonus #1: Secret Growth Master Guide (Worth ₹999) - <span class="text-emerald-400 font-bold ml-1">FREE</span></div>
-                    <div class="text-xs text-slate-300 flex items-center"><i class="fas fa-check text-emerald-400 mr-2"></i> Bonus #2: Premium Resource Toolkit (Worth ₹799) - <span class="text-emerald-400 font-bold ml-1">FREE</span></div>
+                    <div class="text-xs text-slate-300 flex items-center"><i class="fas fa-check-circle text-emerald-400 mr-2 text-sm"></i> Bonus #1: Secret Growth Master Guide (Worth ₹999) - <span class="text-emerald-400 font-bold ml-1">FREE</span></div>
+                    <div class="text-xs text-slate-300 flex items-center"><i class="fas fa-check-circle text-emerald-400 mr-2 text-sm"></i> Bonus #2: Premium Resource Toolkit (Worth ₹799) - <span class="text-emerald-400 font-bold ml-1">FREE</span></div>
                 </div>
 
                 <!-- Checkout Box -->
@@ -118,67 +118,94 @@
         </div>
     </section>
 
-    <!-- NEW: Detailed Long-Form Sales Section (बीच का बड़ा और खतरनाक डिटेल्ड सेक्शन) -->
-    <section class="py-16 bg-slate-900/20 border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <!-- NEW: Wide, Professional & Attractive Detailed Sales Sections (चौड़ा और सुंदर सेक्शन) -->
+    <section class="py-16 bg-gradient-to-b from-slate-900/40 to-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
             
-            <!-- Box 1: What is this product? -->
-            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                    <span class="bg-rose-500/10 text-rose-500 p-2.5 rounded-xl mr-3"><i class="fas fa-file-alt"></i></span>
-                    <span>यह प्रोडक्ट क्या है और इससे आपको क्या मिलेगा?</span>
-                </h3>
-                <p id="long-desc-1" class="text-slate-300 text-base leading-relaxed">
-                    Loading detailed breakdown...
-                </p>
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="bg-indigo-500/10 text-indigo-400 text-xs font-bold px-4 py-1.5 rounded-full border border-indigo-500/20 uppercase tracking-widest inline-block mb-3">
+                    <i class="fas fa-sparkles mr-1"></i> Comprehensive Deep Dive
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    इस प्रोडक्ट के अंदर आपको ऐसा क्या खास मिलता है?
+                </h2>
+                <p class="text-slate-400 text-sm mt-2">पूरी डिटेल, स्टेप-बाय-स्टेप गाइड और आपके फायदों की पूरी जानकारी नीचे दी गई है।</p>
             </div>
 
-            <!-- Box 2: How to Use (इस्तेमाल कैसे करें) -->
-            <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-6 flex items-center">
-                    <span class="bg-amber-500/10 text-amber-500 p-2.5 rounded-xl mr-3"><i class="fas fa-list-check"></i></span>
-                    <span>इसे इस्तेमाल करने का सही तरीका (Step-by-Step Guide)</span>
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
-                        <span class="text-amber-500 font-black text-lg">01</span>
-                        <h4 class="text-white font-bold text-sm mt-2 mb-1">Instant Download</h4>
-                        <p class="text-xs text-slate-400">Payment करते ही आपको तुरंत Google Drive की सुरक्षित लिंक मिल जाएगी।</p>
+            <!-- Grid Layout for Wide Display on Laptops -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                
+                <!-- Card 1: What is inside -->
+                <div class="bg-slate-900/90 p-8 rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between hover:border-rose-500/50 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-rose-500/10 text-rose-500 flex items-center justify-center text-2xl mb-6 border border-rose-500/20">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-white mb-3">यह प्रोडक्ट क्या है?</h3>
+                        <p id="long-desc-1" class="text-slate-300 text-sm leading-relaxed">
+                            Loading breakdown...
+                        </p>
                     </div>
-                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
-                        <span class="text-amber-500 font-black text-lg">02</span>
-                        <h4 class="text-white font-bold text-sm mt-2 mb-1">Copy & Paste Setup</h4>
-                        <p class="text-xs text-slate-400">फाइल्स को खोलें, अंदर दिए गए टेम्पलेट्स या प्रॉम्प्ट्स को सीधा कॉपी करें।</p>
-                    </div>
-                    <div class="bg-slate-950 p-5 rounded-2xl border border-slate-800">
-                        <span class="text-amber-500 font-black text-lg">03</span>
-                        <h4 class="text-white font-bold text-sm mt-2 mb-1">Scale & Grow</h4>
-                        <p class="text-xs text-slate-400">अपने काम में लगाएं और कम समय में 10x रिजल्ट्स हासिल करें।</p>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center text-rose-400 text-xs font-bold">
+                        <i class="fas fa-check mr-2"></i> 100% Digital Ready-to-Use Files
                     </div>
                 </div>
-            </div>
 
-            <!-- Box 3: Why it gives maximum benefit -->
-            <div class="bg-gradient-to-br from-rose-950/30 to-slate-900 p-8 rounded-3xl border border-rose-500/30 shadow-xl">
-                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-4 flex items-center">
-                    <span class="bg-rose-500/20 text-rose-400 p-2.5 rounded-xl mr-3"><i class="fas fa-chart-line"></i></span>
-                    <span>इसको इस्तेमाल करने से आपको ज्यादा फायदा क्यों होगा?</span>
-                </h3>
-                <p class="text-slate-300 text-base leading-relaxed mb-4">
-                    बाजार में हजारों लोग बिना किसी स्ट्रैटेजी के महीनों मेहनत करते हैं और नाकामयाब हो जाते हैं। यह प्रोडक्ट आपके महीनों के समय और हजारों रुपये की फालतू रिसर्च को बचाता है। इसमें वो सब कुछ प्रूवेन (Proven) और रेडी-मेड मिलता है जो बड़े-बड़े मार्केटर्स इस्तेमाल करते हैं।
-                </p>
-                <div class="flex items-center text-rose-400 text-xs font-bold">
-                    <i class="fas fa-shield-check mr-2 text-base"></i> 100% Action-Oriented & Zero Fluff Material Guaranteed.
+                <!-- Card 2: How to Use -->
+                <div class="bg-slate-900/90 p-8 rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between hover:border-amber-500/50 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl mb-6 border border-amber-500/20">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-white mb-3">इस्तेमाल करने का तरीका</h3>
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="flex items-start bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded mr-2 text-[10px]">Step 1</span>
+                                <span>पेमेंट के तुरंत बाद सिक्योर गूगल ड्राइव लिंक पाएं।</span>
+                            </div>
+                            <div class="flex items-start bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded mr-2 text-[10px]">Step 2</span>
+                                <span>फाइल्स या टेम्पलेट्स को सीधा कॉपी या डाउनलोड करें।</span>
+                            </div>
+                            <div class="flex items-start bg-slate-950 p-3 rounded-xl border border-slate-800">
+                                <span class="bg-amber-500 text-slate-950 font-bold px-2 py-0.5 rounded mr-2 text-[10px]">Step 3</span>
+                                <span>अपने काम में लागू करके 10x ग्रोथ हासिल करें।</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center text-amber-400 text-xs font-bold">
+                        <i class="fas fa-bolt mr-2"></i> Zero Technical Skills Required
+                    </div>
                 </div>
-            </div>
 
+                <!-- Card 3: Why Maximum Benefit -->
+                <div class="bg-slate-900/90 p-8 rounded-3xl border border-slate-800 shadow-2xl flex flex-col justify-between hover:border-emerald-500/50 transition duration-300">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-2xl mb-6 border border-emerald-500/20">
+                            <i class="fas fa-chart-line-up"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-white mb-3">इससे आपको फायदा क्यों?</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            बाजार में लोग महीनों रिसर्च करने में अपना समय और पैसा बर्बाद करते हैं। यह प्रोडक्ट आपके लिए पहले से टेस्टेड, प्रूवेन और रेडीमेड सेटअप लेकर आता है ताकि आप बिना भटके सीधे रिजल्ट पा सकें।
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center text-emerald-400 text-xs font-bold">
+                        <i class="fas fa-shield-check mr-2"></i> Saves Months of Hard Work & Money
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- Dynamic Customer Reviews & Comments Section -->
-    <section class="py-20 bg-slate-900/40 border-t border-slate-800">
+    <section class="py-20 bg-slate-950 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="bg-rose-500/10 text-rose-400 text-xs font-bold px-3 py-1.5 rounded-full border border-rose-500/20 inline-block mb-3">
+                    <i class="fas fa-heart text-rose-500 mr-1"></i> Verified Testimonials
+                </span>
                 <h2 class="text-3xl font-extrabold text-white mb-2">What Happy Customers Are Saying</h2>
                 <p class="text-slate-400 text-sm">Real reviews from verified creators who used this exact product.</p>
             </div>
@@ -205,7 +232,7 @@
                 rating: "4.9 / 5.0 (14,230+ Verified Ratings)",
                 bought: "1,850 people bought this in the last 24 hours!",
                 desc: "2000+ ready-to-use prompts for business & marketing to skyrocket your productivity and sales without effort.",
-                longDesc: "यह कोई साधारण ई-बुक नहीं है, बल्कि 2000+ से ज्यादा खूंखार और टेस्टेड ChatGPT प्रॉम्प्ट्स का खजाना है। इसे विशेष रूप से डिजिटल मार्केटर्स, यूट्यूबर्स, और बिजनेस ओनर्स के लिए डिज़ाइन किया गया है। अगर आप कंटेंट लिखने, ईमेल मार्केटिंग करने, या अपने सोशल मीडिया को ऑटोमेट करने में घंटों लगाते हैं, तो यह बंडल आपका 90% समय बचा लेगा। इसमें हर प्रॉम्प्ट को इस तरह से सेट किया गया है कि आपको सिर्फ कॉपी-पेस्ट करना है और AI आपके लिए चुटकियों में बेहतरीन काम करके दे देगा।",
+                longDesc: "यह कोई साधारण ई-बुक नहीं है, बल्कि 2000+ से ज्यादा खूंखार और टेस्टेड ChatGPT प्रॉम्प्ट्स का खजाना है। इसे विशेष रूप से डिजिटल मार्केटर्स, यूट्यूबर्स, और बिजनेस ओनर्स के लिए डिज़ाइन किया गया है ताकि आपका 90% समय बच सके।",
                 images: [
                     "https://images.unsplash.com/photo-1677442136019-21780efad99a?w=1200&auto=format&fit=crop&q=80",
                     "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&auto=format&fit=crop&q=80",
@@ -225,7 +252,7 @@
                 rating: "4.8 / 5.0 (22,100+ Verified Ratings)",
                 bought: "2,410 people bought this in the last 24 hours!",
                 desc: "Make viral faceless reels using cutting-edge AI tools without showing your face or recording audio. Explode your reach today!",
-                longDesc: "आज के समय में इंस्टाग्राम रील्स और यूट्यूब शॉट्स पर बिना चेहरा दिखाए और बिना अपनी आवाज रिकॉर्ड किए लाखों फॉलोअर्स कैसे बढ़ाएं, इस बात का पूरा सीक्रेट इस वीडियो किट में छिपा है। इसमें आपको दुनिया के सबसे बेहतरीन AI वीडियो जनरेटर्स, ऑटो-कैप्शन टूल्स और वायरल एडिटिंग टेंपलेट्स का पूरा सेटअप मिलता है। आपको कैमरे के सामने आने की बिल्कुल जरूरत नहीं है—AI आपके लिए वीडियो बनाएगा और आप घर बैठे तेजी से ग्रो करेंगे।",
+                longDesc: "आज के समय में इंस्टाग्राम रील्स और यूट्यूब शॉट्स पर बिना चेहरा दिखाए और बिना अपनी आवाज रिकॉर्ड किए लाखों फॉलोअर्स कैसे बढ़ाएं, इस बात का पूरा सीक्रेट इस वीडियो किट में छिपा है।",
                 images: [
                     "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&auto=format&fit=crop&q=80",
                     "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&auto=format&fit=crop&q=80",
@@ -245,7 +272,7 @@
                 rating: "5.0 / 5.0 (9,840+ Verified Ratings)",
                 bought: "920 people bought this in the last 24 hours!",
                 desc: "Automate your business tasks, leads, and emails without coding using advanced Zapier flows built by top experts.",
-                longDesc: "अपने बिजनेस के सारे बोरिंग काम—जैसे लीड्स कलेक्ट करना, ऑटो-ईमेल भेजना, गूगल शीट्स मैनेज करना—को पूरी तरह ऑटोमेट करने का यह सबसे बेहतरीन मास्टर वॉर्ट है। इसमें आपको कोडिंग की एक लाइन भी नहीं लिखनी पड़ती। प्री-बिल्ट Zapier वर्कफ्लो टेम्पलेट्स दिए गए हैं जिन्हें बस एक क्लिक में इंपोर्ट करना है और आपका पूरा सिस्टम ऑटो पायलट मोड पर काम करने लगेगा।",
+                longDesc: "अपने बिजनेस के सारे बोरिंग काम—जैसे लीड्स कलेक्ट करना, ऑटो-ईमेल भेजना, गूगल शीट्स मैनेज करना—को पूरी तरह ऑटोमेट करने का यह सबसे बेहतरीन मास्टर वॉर्ट है। कोडिंग की कोई जरूरत नहीं।",
                 images: [
                     "https://images.unsplash.com/photo-1542744094-3a31246264d0?w=1200&auto=format&fit=crop&q=80",
                     "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&auto=format&fit=crop&q=80",
@@ -265,7 +292,7 @@
                 rating: "4.9 / 5.0 (11,500+ Verified Ratings)",
                 bought: "1,150 people bought this in the last 24 hours!",
                 desc: "Build a solo digital business using artificial intelligence from scratch to scaling a 6-figure income stream.",
-                longDesc: "अकेले बंदे (Solo Founder) के रूप में आर्टिफिशियल इंटेलिजेंस की मदद से एक पूरी डिजिटल कंपनी कैसे खड़ी करें, इसका ज़ीरो से लेकर सिक्स-फिगर रेवेन्यू तक का पूरा ब्लूप्रिंट इस ई-बुक में है। आइडिया जनरेशन से लेकर प्रोडक्ट लॉन्च और मार्केटिंग तक, सब कुछ बिना किसी टीम या बड़ी लागत के कैसे मैनेज करना है, यह इसमें सिखाया गया है।",
+                longDesc: "अकेले बंदे के रूप में AI की मदद से पूरी डिजिटल कंपनी कैसे खड़ी करें, इसका ज़ीरो से लेकर सिक्स-फिगर रेवेन्यू तक का पूरा ब्लूप्रिंट इस ई-बुक में दिया गया है।",
                 images: [
                     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80",
                     "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=400&auto=format&fit=crop&q=80",
@@ -285,7 +312,6 @@
         if (productId && productsData[productId]) {
             const product = productsData[productId];
             
-            // Text Details
             document.getElementById('page-title').innerText = product.title + " - DigiStore";
             document.getElementById('prod-title').innerText = product.title;
             document.getElementById('prod-badge').innerText = product.badge;
@@ -295,30 +321,27 @@
             document.getElementById('prod-rating').innerText = product.rating;
             document.getElementById('prod-bought-count').innerHTML = `<b>${product.bought}</b>`;
             
-            // Long Description Box (हर प्रोडक्ट के लिए अलग लंबी डिटेल)
             document.getElementById('long-desc-1').innerText = product.longDesc;
 
-            // Images
             document.getElementById('prod-img').src = product.images[0];
             document.getElementById('thumb-1').src = product.images[0];
             document.getElementById('thumb-2').src = product.images[1];
             document.getElementById('thumb-3').src = product.images[2];
 
-            // Reviews
             const reviewsContainer = document.getElementById('reviews-container');
             reviewsContainer.innerHTML = "";
             
             product.reviews.forEach(rev => {
                 const reviewCard = `
-                    <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                    <div class="bg-slate-900 p-6 rounded-3xl border border-slate-800 flex flex-col justify-between shadow-xl">
                         <div>
                             <div class="flex text-amber-400 text-xs mb-3">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                             <p class="text-slate-300 text-sm">"${rev.text}"</p>
                         </div>
-                        <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-900">
-                            <img src="${rev.img}" class="w-9 h-9 rounded-full object-cover">
+                        <div class="flex items-center space-x-3 mt-6 pt-4 border-t border-slate-800/80">
+                            <img src="${rev.img}" class="w-9 h-9 rounded-full object-cover border border-slate-700">
                             <div>
                                 <h4 class="text-xs font-bold text-white">${rev.name}</h4>
                                 <p class="text-[10px] text-emerald-400"><i class="fas fa-check-circle"></i> Verified Buyer</p>
